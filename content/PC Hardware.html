@@ -1,32 +1,139 @@
-<h1>About</h1>
-<p></p>
-<p>這個倉儲位於 <a href="https://github.com/mdecourse/cmstemplate">https://github.com/mdecourse/cmstemplate</a> 是一個能夠與 Github Pages, Gitlab Pages 以及 Heroku 結合的網際內容管理系統.</p>
-<p></p>
-<h1>亂數分組</h1>
-<h2>第二組</h2>
-<h3>github</h3>
-<p><a href="https://github.com/40623219/cp2020">40623219     </a><a href="https://github.com/40923101/cp2020">40923101</a><a href="https://github.com/40623219/cp2020"></a></p>
-<p><a href="https://github.com/40923104/cp2020">40923104</a>     <a href="https://github.com/40923107/cp2020">40923107</a></p>
-<p><a href="https://github.com/40923115/cp2020">40923115</a>      <a href="https://github.com/40923124/cp2020">40923124</a></p>
-<p><a href="https://github.com/40923125/cp2020">40923125</a>     <a href="https://github.com/40923136/cp2020">40923136</a></p>
-<p><a href="https://github.com/40923142/cp2020">40923142</a>     <a href="https://github.com/40923151/cp2020">40923151</a></p>
-<p><a href="https://github.com/40923152/cp2020">40923152</a></p>
-<p></p>
-<h3>靜態網站</h3>
-<p><a href="https://40623219.github.io/cp2020">40623219</a>     <a href="https://40923101.github.io/cp2020">40923101</a></p>
-<p><a href="https://40923104.github.io/cp2020">40923104</a>     <a href="https://40923107.github.io/cp2020">40923107</a></p>
-<p><a href="https://40923115.github.io/cp2020">40923115</a>      <a href="https://40923124.github.io/cp2020">40923124</a></p>
-<p><a href="https://40923125.github.io/cp2020">40923125</a>     <a href="https://40923136.github.io/cp2020">40923136</a></p>
-<p><a href="https://40923142.github.io/cp2020">40923142</a>     <a href="https://40923151.github.io/cp2020">40923151</a></p>
-<p><a href="https://40923152.github.io/cp2020">40923152</a></p>
-<p></p>
-<div></div>
-<h2>gitlab-ci.yml</h2>
-<p>標題不能使用 .gitlab-ci.yml 因為轉為 content/.gitlab-ci.yml 時, 無法從 content/.github-ci.yml 呼叫.</p>
-<p>.gitlab-ci.yml 是在 Gitlab Pages 設定過程中將靜態網頁轉存並伺服的 continuout integration 設定檔案.</p>
-<h1>作業一</h1>
-<h2>PC Hardware</h2>
-<h3>原文</h3>
+<!DOCTYPE html><html>
+        <head>
+        <title>CMSiMDE</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700,900" rel="stylesheet">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/fonts/icomoon/style.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/bootstrap.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/magnific-popup.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/jquery-ui.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/owl.carousel.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/owl.theme.default.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/bootstrap-datepicker.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/fonts/flaticon/font/flaticon.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/aos.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/style.css">
+        <link rel="shortcut icon" href="./../cmsimde/static/favicons.png">
+        
+        <style type='text/css'>
+            .site-section {
+            background-color: #FFFF;
+            padding: 40px 40px;
+            }
+            body > div > div.dropdown.open {
+                display: block;
+            }
+        </style>
+    
+        <!-- <script src="./../cmsimde/static/jquery.js"></script> -->
+        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+        <script src="../cmsimde/static/chimper/js/jquery-3.3.1.min.js"></script>
+        <link rel="stylesheet" href="./../cmsimde/static/tipuesearch/css/normalize.min.css">
+        <script src="./../cmsimde/static/tipuesearch/tipuesearch_set.js"></script>
+        <script src="tipuesearch_content.js"></script>
+        <link rel="stylesheet" href="./../cmsimde/static/tipuesearch/css/tipuesearch.css">
+        <script src="./../cmsimde/static/tipuesearch/tipuesearch.js"></script>
+        <script>
+            /* original tipuesearch
+            $(document).ready(function() {
+                 $('#tipue_search_input').tipuesearch();
+            });
+            */
+            // customed doSearch
+            function doSearch() {
+                $('#tipue_search_input').tipuesearch({
+                    newWindow: true, 
+                    minimumLength: 2,
+                    wholeWords: false, // for search 中文
+                });
+            }
+            $(document).ready(doSearch);
+        </script>
+        
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shCore.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushBash.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushDiff.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushJScript.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushJava.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushPython.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushSql.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushHaxe.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushXml.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushPhp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushLua.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCpp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCss.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCSharp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushDart.js"></script>
+<link type="text/css" rel="stylesheet" href="./../cmsimde/static/syntaxhighlighter/css/shCoreDefault.css"/>
+<script type="text/javascript">SyntaxHighlighter.all();</script>
+<!-- 暫時不用
+<script src="./../cmsimde/static/fengari-web.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/Cango-13v08-min.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/CangoAxes-4v01-min.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/gearUtils-05.js"></script>
+-->
+<!-- for Brython 暫時不用
+<script src="https://scrum-3.github.io/web/brython/brython.js"></script>
+<script src="https://scrum-3.github.io/web/brython/brython_stdlib.js"></script>
+-->
+<style>
+img.add_border {
+    border: 3px solid blue;
+}
+</style>
+
+</head>
+<body>
+<div class='container'><nav>
+        
+    <div class="site-wrap">
+
+    <div class="site-mobile-menu">
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close mt-3">
+          <span class="icon-close2 js-menu-toggle"></span>
+        </div>
+      </div>
+      <div class="site-mobile-menu-body"></div>
+    </div>
+    
+            <header class="site-navbar py-4 bg-white" role="banner">
+              <div class="container-fluid">
+                <div class="row align-items-center">
+                <h1>40923124</h1>
+                <div class="pl-4">
+                    <form>
+                    <input type="text" placeholder="Search" name="q" id="tipue_search_input" pattern=".{2,}" title="At least 2 characters" required>
+                    </form>
+                </div>
+                  <!-- <div class="col-11 col-xl-2">
+                    <h1 class="mb-0 site-logo"><a href="index.html" class="text-black h2 mb-0">40923124</a></h1> 
+                  </div>
+                  -->
+                  <div class="col-12 col-md-10 d-none d-xl-block">
+                    <nav class="site-navigation position-relative text-right" role="navigation">
+    <ul class='site-menu js-clone-nav mr-auto d-none d-lg-block'>
+                        <li class="active has-children"><a href="index.html">Home</a>
+                        <ul class="dropdown">
+                            <li><a href="sitemap.html">Site Map</a></li>
+                            <li><a href="./../reveal/index.html">reveal</a></li>
+                            <li><a href="./../blog/index.html">blog</a></li>
+                        </ul>
+                      </li>
+                     <li><a href='About.html'>About</a><li class='has-children'><a href='亂數分組.html'>亂數分組</a><ul class='dropdown'><li class='has-children'><a href='第二組.html'>第二組</a><ul class='dropdown'><li><a href='github.html'>github</a><li><a href='靜態網站.html'>靜態網站</a></li></ul><li><a href='gitlab-ci.yml.html'>gitlab-ci.yml</a></li></ul><li class='has-children'><a href='作業一.html'>作業一</a><ul class='dropdown'><li class='has-children'><a href='原文.html'>原文</a><ul class='dropdown'><li><a href='PC Hardware.html'>PC Hardware</a></li></ul><li><a href='翻譯.html'>翻譯</a></li>
+                      </ul>
+                </nav>
+              </div>
+              <div class="d-inline-block d-xl-none ml-md-0 mr-auto py-3" style="position: relative; top: 3px;"><a href="#" class="site-menu-toggle js-menu-toggle text-black"><span class="icon-menu h3"></span></a></div>
+              </div>
+
+            </div>
+          </div>
+          
+        </header>
+    <div id="tipue_search_content">原文 << <a href='原文.html'>Previous</a> <a href='翻譯.html'>Next</a> >> 翻譯<br /><h1>PC Hardware</h1>
 <p><strong>P.67</strong></p>
 <p><strong></strong></p>
 <p id="N10680" lang="">Hard disk drives (HDDs) are by far the most important storage device used by a personal computer. These drives store all the user’s data files, applications, and operating systems. Whether the drive is internal or external, it is built the same way. Most drives are built from one or more double-sided platters of aluminum or glass that is coated with a magnetic surface. In the first hard drives, users were lucky to store a maximum of 5 MB of data, but now storage space of 500 GB to 3 TB is commonplace in most users’ workstations. Storage has certainly evolved into expansive storage capacities at minimal cost, with excellent performance speeds.</p>
@@ -92,67 +199,54 @@
 <div class="imagewrap"><span class="image"><img alt="Photograph of a BIOS screen that provides a graph of system temperature and actual temperature measurements within the CPU and memory, along with ambient temperature. It also charts fan speeds (via tachometer readings) in the CPU, memory, chassis, chipset, and PCI." class="popimg" id="_i_0" onclick="loadImageFromPage(this);" src="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/PCH08/webcontent/PCH08/image2.png" title="Photograph of a BIOS screen that provides a graph of system temperature and actual temperature measurements within the CPU and memory, along with ambient temperature. It also charts fan speeds (via tachometer readings) in the CPU, memory, chassis, chipset, and PCI."/></span>
 <p id="N10698" lang="">BIOS system temperature display. Photo used under CC-BY-NC license from <a href="https://flic.kr/p/9oTRW6" id="_i_1" lang="" target="_blank">Steve_L</a>.</p>
 </div>
-<h3>翻譯</h3>
-<p><strong>P.67</strong></p>
-<p id="N10680" lang="">傳統硬碟（HDD）是迄今為止個人使用的最重要的存儲設備電腦。 這些驅動器存儲所有用戶的數據文件，應用程序和操作 系統。 無論驅動器是內部驅動器還是外部驅動器，其構建方式均相同。 最 驅動器由鋁或玻璃製成的一個或多個雙面盤製成， 塗有磁性表面。 在第一個硬盤驅動器中，用戶很幸運地存儲了一個 最多5 MB的數據，但是現在大多數情況下500 GB至18TB的存儲空間已司空見慣用戶的工作站。 毫無疑問，存儲已發展為 成本最低，性能速度極佳。</p>
-<div class="imagewrap"><span class="image"><img alt="描繪了已裝入硬盤的照片。 它是一個扁平的矩形金屬盒，頂部帶有圓形設計。 " class="popimg" id="_i_0" onclick="loadImageFromPage(this);" src="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/PCH07/webcontent/PCH07/image23.jpeg" title="描繪了已裝入硬盤的照片。 它是一個扁平的矩形金屬盒，頂部帶有圓形設計。 "/></span>
-<p id="N10689" lang="">硬盤。 版權： <a href="http://www.123rf.com/profile_karn2608" id="_i_1" lang="" target="_blank">karn 2608/123 RF Stock 照片 </a>。</p>
-</div>
-<div class="imagewrap"><span class="image"><img alt="一張描述硬盤內部工作原理的照片。 圓盤是圓形的，就像留聲機唱片一樣，上面有一個手臂。 " class="popimg" id="_i_2" onclick="loadImageFromPage(this);" src="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/PCH07/webcontent/PCH07/image24.png" title="一張描述硬盤內部工作原理的照片。 圓盤是圓形的，就像留聲機唱片一樣，上面有一個手臂。 "/></span>
-<p id="N10698" lang="">硬盤解剖。 照片由CC-BY-NC-ND授權使用 <a href="https://flic.kr/p/4jcppM" id="_i_3" lang="" target="_blank">羅伯托·範塔納（Roberto Fantana） </a>。</p>
-</div>
-<p id="N106A1" lang="">硬盤驅動器不僅具有簡單的測量方法，還具有多種特性 他們有很多存儲空間。 大多數用戶只會根據存儲選擇驅動器 容量，但其他性能因素可能更為重要。 如果驅動器是 SATA設備，它可以達到高達6 Gbps的數據傳輸速度，但這取決於 驅動器從磁盤訪問數據的速度。 硬盤有旋轉速度， 以每分鐘轉數（RPM）衡量。 傳統硬碟通常有一個7200RPM速率，但更昂貴的驅動器具有7200 RPM，10000 RPM甚至15000 RPM 費率。 通常在服務器和高性能遊戲中發現更快的旋轉速度 系統，但隨著價格的持續上漲，7200 RPM驅動器變得越來越普遍 下降。 硬盤還具有內部緩衝區或緩存。 便宜的驅動器可能有 一個僅8 MB的緩衝區，而價格更高的驅動器將具有64 MB的緩衝區。 的 緩衝區越大，性能越好，並且從中檢索數據越快 磁盤。</p>
-<p id="N106A4" lang="">固態硬盤（SSD）是存儲領域中的最新技術。 與大多數技術一樣，這在首次投入市場時相當昂貴，但價格趨於平穩，大多數PC製造商都在新機器上提供SSD解決方案。</p>
-<p id="N106A6" lang="">最初，為了提高性能，一些HDD製造商創建了混合驅動器，將小型固態驅動器與大型傳統硬盤結合在一起，為用戶提供了更高的速度，而又沒有固態驅動器的巨額成本。 這些設備比傳統驅動器快，但不及SSD快。</p>
-<p id="N106A8" lang="">除了混合驅動器，英特爾還開發了用於移動計算的mSata接口。 較小的外形尺寸，通過連接到SATA主機控制器，可以以相同的訪問速度實現大容量SSD存儲。</p>
-<div class="imagewrap"><span class="image"><img alt="這張照片描繪了位於其他設備頂部的SSD / HDD混合+ HDD硬盤驅動器。 這是一個扁平的矩形框，它是帶有黑色邊框的銀色。 設備上寫有不可識別的文字，但英特爾徽標除外。 " class="popimg" id="_i_4" onclick="loadImageFromPage(this);" src="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/PCH07/webcontent/PCH07/image25.png" title="這張照片描繪了位於其他設備頂部的SSD / HDD混合+ HDD硬盤驅動器。 這是一個扁平的矩形框，它是帶有黑色邊框的銀色。 設備上寫有不可識別的文字，但英特爾徽標除外。 "/></span>
-<p id="N106B1" lang="">SSD/HDD hybrid + HDD hard drive. Photo used under CC-BY license from <a href="https://flic.kr/p/bLZu6c" id="_i_5" lang="" target="_blank">Yutaka Tsutano</a>.</p>
-</div>
-<p id="N106BA" lang="">SSDs are intended to replace the traditional hard disk. They are fast and durable, and contain no moving parts. The SSD emulates a traditional hard drive and is often used in netbooks, Ultrabooks, and other lightweight systems, or machines that require fast, quiet performance. Most SSDs come in a 2.5-inch form factor, similar to a laptop hard disk, and use a 2.5-inch to 3.5-inch adapter when being placed in a desktop computer. The SSD can be built using multilevel cell (MLC) to save money, but these tend to be much slower than their more expensive and faster counterpart, the SLC (single level cell). Initially, these drives cost five to ten times as much as an equivalent-capacity traditional hard disk. Market demand and increased production have helped lower the pricing. As of the end of 2015, a 2.5-inch 250 GB SATAIII SSD can be purchased for less than $100, but the same amount of money would purchase a traditional 2 TB HDD. But, they are significantly faster and quieter, since they can access the information directly without having to wait for the hard disk to spin up and find the data on the disk.</p>
-<div class="imagewrap"><span class="image"><img alt="這張照片描繪了在電路板上帶有固態芯片的固態驅動器（SSD）。 " class="popimg" id="_i_6" onclick="loadImageFromPage(this);" src="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/PCH07/webcontent/PCH07/image26.png" title="這張照片描繪了在電路板上帶有固態芯片的固態驅動器（SSD）。 "/></span>
-<p id="N106C3" lang="">固態驅動器（SSD）。 照片由CC-BY-NC-ND授權使用 <a href="https://flic.kr/p/6tESgu" id="_i_7" lang="" target="_blank">托馬斯·舒威（Thomas Schewe） </a>。</p>
-</div>
-<p id="N106CC" lang="">廉價驅動器的冗餘陣列（RAID）結合了眾多 將傳統的物理硬盤驅動器放入單個邏輯磁盤以提供更快或更 冗餘單個驅動器。 RAID 0（RAID 0）至少使用兩個驅動器 使用 單個驅動器 <a aria-describedby="N106D0" class="extra" id=""></a>條帶化 提振 性能。 但是，如果任何一個驅動器發生故障，所有數據都會丟失。 因此，對於RAID 0， 用戶可以提高速度，但不會獲得任何冗餘。 RAID 1（RAID 1）至少使用 使用 兩個驅動器用作單個驅動器 <a aria-describedby="N106D8" class="extra" id=""></a>鏡像 提高冗餘度。 每次開車 由計算機寫入，則寫入信息的兩個副本（每個副本一個） 駕駛）。 因此，如果任何一個驅動器發生故障，所有數據仍可在該驅動器上訪問並且安全。 其他驅動器。 使用RAID 1，用戶可以獲得冗餘，但不會獲得任何速度。</p>
-<p id="N106DF" lang="">由於RAID 0為我們提供了無冗餘的速度，而RAID 1為我們提供了無冗餘的冗餘 為了提高速度，工程師開發了二者的混合體，稱為RAID 01或RAID 10。 RAID 01或10，使用RAID 0和 從RAID 1鏡像以同時獲得速度和冗餘。 唯一的問題 解決方案是您損失了百分之五十的存儲空間（就像我們在RAID中所做的一樣） 1）到開銷/冗餘。 為了克服這個問題，另一種RAID 5是 成立。 在RAID 5中，至少需要三個驅動器，它們可以作為 單個邏輯驅動器。 將信息寫入驅動器後，該信息即為 在驅動器上條帶化，並且奇偶校驗也分佈在驅動器上。 如果單 驅動器發生故障，可以使用現有信息和奇偶校驗重建信息 信息以填補缺失的部分。 使用熱插拔驅動器，可能會損壞驅動器 刪除，插入新磁盤並重建RAID，而不會造成任何停機（儘管 重建RAID時會發生性能損失）。</p>
-<div class="imagewrap"><span class="image"><img class="popimg" id="_i_8" onclick="loadImageFromPage(this);" src="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/PCH07/webcontent/PCH07/image27.png"/></span>
-<p id="N106E7" lang="">RAID鏡像條帶。 來自 CC-BY許可下使用的圖像 <a href="https://flic.kr/p/p8jmLq" id="_i_9" lang="" target="_blank">Linux屏幕截圖的 </a>。</p>
-<p lang=""></p>
-<p lang=""><strong>P.68</strong></p>
-</div>
-<p id="N106F0" lang="">要創建RAID陣列，工作站必須具有PATA或SATA硬件 支持硬件RAID的控制器。 一些主板本身支持這些，而 其他人則需要用戶購買擴展卡才能執行這些功能。 如果您的系統不支持硬件RAID，則Windows會在以下位置支持軟件RAID。 所有系統，但您將失去主操作系統RAID的優勢 使用這種方法。</p>
-<p id="N106F3" lang="">硬件RAID至少需要兩個硬盤用於RAID 0或RAID 1，至少三個磁盤 用於RAID 5，至少四個磁盤用於RAID 10或RAID01。要創建軟件RAID， 您可以使用Windows的磁盤管理軟件為數據驅動器創建RAID， 其他分區。</p>
-<div class="contentContain">
-<p id="N10678" lang="">計算機需要幾件事才能正常運行：一種接收數據輸入的方法，一種 處理數據的方法，輸出數據的方法和存儲數據的方法。 數據存儲有 經過多年的發展，但最常見的存儲機制是硬盤 大約超過35年。 唯一真正的變化是物理尺寸（它們具有 變得更小），邏輯大小（它們可以存儲更多數據），速度和連接器 類型。 最常見的連接器類型是SATA，PATA / IDE，SCSI，軟盤，eSATA， FireWire，USB和網絡連接，我們將分別討論它們。</p>
-<p id="N1067B" lang="">PATA（並行高級技術附件）自1980年代就出現了，但是使用了 稱為IDE（集成驅動電子設備）。 這種類型的連接器使用電纜 由40線或80線組成（支持電纜選擇模式）。 兩種類型 電纜的兩端各有40個插針。 較新樣式的電纜已進行顏色編碼，因此 藍色連接器連接至主板，黑色連接器連接至主電源 （或主）設備，灰色連接器連接到第二（或從）設備。 此連接器類型用於硬盤驅動器，CD驅動器，DVD驅動器和某些磁帶備份驅動器。 這些設備中的每一個都有跳線，必須將其設置為“主”，“從”或“電纜選擇”模式。 “電纜選擇”消除了手動分配主機或從機的需要。 每條電纜最多可支持兩個設備，但是每條電纜上只能使用一個主設備或從設備。 使用這些設備之前，必須正確配置BIOS。 儘管使用超直接內存訪問（UDMA）對EIDE接口進行了改進，但串行ATA（SATA）不僅限於每個通道四個設備，而且訪問速度更快。</p>
-<div class="imagewrap"><span class="image"><img alt="這張照片描繪了三個IDE驅動器（每個矩形）彼此堆疊。 " class="popimg" id="_i_0" onclick="loadImageFromPage(this);" src="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/PCH07/webcontent/PCH07/image28.png" title="這張照片描繪了三個IDE驅動器（每個矩形）彼此堆疊。 "/></span>
-<p id="N10684" lang="">IDE驅動器。 照片由 根據CC-BY-NC-ND許可使用 <a href="https://flic.kr/p/389w77" id="_i_1" lang="" target="_blank">Brian Barnett </a>。</p>
-</div>
-<div class="imagewrap"><span class="image"><img alt="SATA電纜旁的IDE電纜照片。 IDE電纜為黑色，帶有藍色的多針連接器。 SATA電纜為紅色，帶有黑色連接器。 " class="popimg" id="_i_2" onclick="loadImageFromPage(this);" src="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/PCH07/webcontent/PCH07/image29.png" title="SATA電纜旁的IDE電纜照片。 IDE電纜為黑色，帶有藍色的多針連接器。 SATA電纜為紅色，帶有黑色連接器。 "/></span>
-<p id="N10693" lang="">驅動器電纜。 照片由 根據CC-BY許可使用 <a href="https://flic.kr/p/8h6x3F" id="_i_3" lang="" target="_blank">gcg 2009 </a>。</p>
-</div>
-<p id="N1069C" lang="">SATA是用於硬盤和光盤驅動器的當前連接方法。 之所以稱為串行，是因為只有一個設備可以 連接到每根電纜，數據以串行方式傳輸（ 時間）。 這些設備通常沒有跳線，但是如果有跳線，則可以用來 配置數據傳輸的速度或啟用 等特殊功能 <a aria-describedby="N1069F" class="extra" id=""></a>擴展 頻譜時鐘 。 SATA是外圍設備，速度非常快，可以提高速度 新版本最高可達6 Gbps，舊版本最高可達3 Gbps。 數據線 形狀像L形，有七個用於數據的引腳。 電源線也為L形，但具有 15針。 內部SATA端口可以通過以下方式輕鬆轉換為eSATA（外部SATA）端口： 使用接頭連接內部端口。</p>
-<div class="imagewrap"><span class="image"><img alt="描繪SATA驅動器且電路板和連接器裸露的照片。 " class="popimg" id="_i_4" onclick="loadImageFromPage(this);" src="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/PCH07/webcontent/PCH07/image30.png" title="描繪SATA驅動器且電路板和連接器裸露的照片。 "/></span>
-<p id="N106AB" lang="">SATA驅動器。 照片由 根據CC-BY許可使用 <a href="https://flic.kr/p/8Fysrr" id="_i_5" lang="" target="_blank">Arkadiusz Sikorski </a>。</p>
-</div>
-<p id="N106B4" lang="">SCSI或小型計算機系統接口支持設備的菊花鏈（內部 或從外部）與七個設備（窄SCSI）或15個設備（寬SCSI）一起使用。 每 鏈中的設備配有設備ID號，該ID使用 選擇器開關，DIP（雙列直插式封裝）開關或跳線塊。 SCSI較舊 技術，並且在很大程度上已被SATA和eSATA取代。 窄SCSI只能 支持最高40 MBps的速度，而寬SCSI最高可以支持320 MBps。</p>
-<div class="imagewrap"><span class="image"><img alt="描述背面帶有兩個藍色SCSI端口的HP Surestore DAT驅動器的照片。 還有一個電源線端口和一個電源開/關切換按鈕。 " class="popimg" id="_i_6" onclick="loadImageFromPage(this);" src="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/PCH07/webcontent/PCH07/image31.png" title="描述背面帶有兩個藍色SCSI端口的HP Surestore DAT驅動器的照片。 還有一個電源線端口和一個電源開/關切換按鈕。 "/></span>
-<p id="N106BD" lang="">HP Surestore DAT驅動器，背面有兩個藍色SCSI端口。 照片 在 CC-BY-SA許可下使用 <a href="https://flic.kr/p/7rzVde" id="_i_7" lang="" target="_blank">Gerben Wierda的 </a>。</p>
-<p lang=""></p>
-<p lang=""><strong>P.69</strong></p>
-<p lang=""><strong></strong></p>
-<p lang="">最初開發台式機時，它們的設計不允許熱插拔 設備。 熱交換是在計算機處於運行狀態時添加或刪除設備的行為。 仍然打開。 在過去，用戶會關閉系統，然後關閉電源 關閉工作站，然後連接設備，然後重新打開機器，否則 電腦無法識別新設備。 在1990年代後期，Windows開始運作 系統開始允許設備熱插拔，其中包括USB和FireWire。 這個 允許用戶只需插入設備，等待幾秒鐘，然後再開始使用它 存儲或檢索數據。 由於這種熱交換，用戶使用 在拔下設備電源之前，Windows中的“安全彈出驅動器”功能 <em class="bold" lang="">會導致數據丟失 </em>。 SATA / eSATA也支持熱插拔，但是 僅當在以下配置中選擇AHCI（高級主機控制器接口）時 BIOS。 如果不是，則驅動器將像舊的PATA / IDE設備一樣工作，並且不會 支持熱插拔。</p>
-</div>
-</div>
-<div></div>
-<div style="text-align: center;"><strong>PCH.8</strong></div>
-<div style="text-align: left;"></div>
-<div style="text-align: left;"><strong>P.71</strong></div>
-<div style="text-align: left;"><strong></strong></div>
-<div style="text-align: left;"><strong><br/>總覽</strong><br/>本模塊將討論熱源及其影響，以及冷卻CPU和系統的各種方法。</div>
-<div style="text-align: left;"><br/><strong>熱源</strong><br/>通過熱輻射產生的熱量是我們計算機電路內電磁運動的副產品。 熱量是由電流在整個計算機中流動時遇到的內部電阻引起的，並且該電阻產生的熱量足以使計算機在機殼內部變得非常非常熱。 根據所執行的特定操作，計算機的每個組件以不同的速率產生熱量。 例如，CPU產生的熱量最多，因為它進行了大量的計算並消耗大量電能。 另一個常見的熱量來源是圖形處理單元（GPU），當執行支持3D圖形（例如視頻遊戲中使用的圖形）所需的計算時，它將進行大量處理。 通常，在遊戲過程中，GPU實際上會比CPU產生更多的熱量。<br/><br/>其他熱源包括硬盤和光盤驅動器，因為在讀/寫週期中磁盤的旋轉會因摩擦和電而產生熱量。 產生大量熱量的計算機的另一個組件是PSU，它可以將交流電轉換為直流電。 由於電源如此之大，因此電源通常具有自己的專用冷卻風扇。<br/><br/>另一個潛在的熱源是計算機所在的房間。 如果您在室溫較高的房間（例如華氏80度（27攝氏度））中工作，由於房間的環境條件，計算機必須從機器中清除其他內部熱量。</div>
-<div style="text-align: left;"><br/><strong>熱效應</strong><br/>如果計算機無法消除內部組件產生的熱量或環境熱量，則計算機的BIOS可能會指示密集型應用程序放慢速度，從而降低CPU的處理能力並最小化其熱量輸出。 另外，BIOS實際上可以指示各種組件關閉，以避免過熱和對組件的可能損壞。 這可能會導致整個系統無預警地關閉，並且可能會常規發生，除非計算機中裝有更高效的冷卻系統（例如更大，更高效的風扇）。 在執行超頻的機器中或在冷卻風扇已損壞的系統中，系統關閉非常普遍。<br/><br/>通常，最終用戶沒有跡象表明發生了過熱情況，但即使這樣也會造成嚴重後果。 硬盤驅動器，CPU和GPU都對溫度變化敏感。 由於設備組件的膨脹和收縮，特別是硬盤驅動器會因溫度變化而造成不可挽回的損害。 這可能導致讀/寫錯誤，甚至導致磁盤驅動器完全故障。</div>
-<div style="text-align: left;"><br/><strong>減少熱量</strong><br/>有許多方法可以減少計算機中產生的熱量，但是最值得注意的方法是使用散熱器，如下面的綠色圖片所示。 散熱器通過傳導將熱量從敏感組件（例如CPU，GPU，北橋和南橋）吸走。 然後，它使用散熱片在更寬的表面積上散熱。 風扇通常在表面上移動空氣，以從散熱器中散熱，然後將其從系統背面的計算機排氣孔中推出。 散熱器由鋁合金或銅製成，而鋁合金或銅是具有高導熱性的軟金屬。<br/>散熱器的照片。 它是一個方形金屬設備，帶有圓形設備，鰭片位於頂部。 圓形設備標記為“ CPU散熱器”。<br/><br/>CPU散熱器。 由 根據CC-BY-NC-ND許可使用的照片 Paul Ely 。<br/><br/>現代PC會產生大量熱量，並且需要同時使用散熱器和冷卻風扇來幫助氣流並減少熱量對附近組件的影響。 機箱設計對於在機箱中產生良好的氣流很重要。 就像打開房屋的門窗可以產生直通的風洞效果一樣，箱體也可以最大化氣流。 另外，應捆紮和捆紮外殼內的電纜，以增加氣流並最大程度地冷卻。</div>
-<p></p>
-<div></div>
-<div></div>
-<div></div>
+<br />原文 << <a href='原文.html'>Previous</a> <a href='翻譯.html'>Next</a> >> 翻譯</div>
+        
+    <!-- footer -->
+      <div class="container">
+        <div class="row pt-3 mx-auto">
+            <p>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" >Colorlib</a>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            </p>
+        </div>
+      </div>
+    <!-- for footer -->
+    
+        </div> <!-- for site wrap -->
+            <!-- <script src="../cmsimde/static/chimper/js/jquery-3.3.1.min.js"></script> -->
+            <script src="../cmsimde/static/chimper/js/jquery-migrate-3.0.1.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery-ui.js"></script>
+            <script src="../cmsimde/static/chimper/js/popper.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/bootstrap.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/owl.carousel.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.stellar.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.countdown.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.magnific-popup.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/bootstrap-datepicker.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/aos.js"></script>
+            <!--
+            <script src="../cmsimde/static/chimper/js/typed.js"></script>
+                    <script>
+                    var typed = new Typed('.typed-words', {
+                    strings: ["Web Apps"," WordPress"," Mobile Apps"],
+                    typeSpeed: 80,
+                    backSpeed: 80,
+                    backDelay: 4000,
+                    startDelay: 1000,
+                    loop: true,
+                    showCursor: true
+                    });
+                    </script>
+            -->
+            <script src="../cmsimde/static/chimper/js/main.js"></script>
+        
+<!-- 啟用 LaTeX equations 編輯 -->
+  <!-- <script>
+  MathJax = {
+    tex: {inlineMath: [['$', '$'], ['\(', '\)']]}
+  };
+  </script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>-->
+    </body></html>
+        
